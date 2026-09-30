@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Islamic Geometric Background Pattern */
+.bg-islamic-pattern {
+  background-color: #fcfbf9;
+  background-image: radial-gradient(rgba(5, 150, 105, 0.07) 1px, transparent 0), radial-gradient(rgba(217, 119, 6, 0.05) 1px, #fcfbf9 0);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.dark .bg-islamic-pattern {
+  background-color: #0c0a09;
+  background-image: radial-gradient(rgba(16, 185, 129, 0.07) 1px, transparent 0), radial-gradient(rgba(245, 158, 11, 0.05) 1px, #0c0a09 0);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Subtle Star Pattern for Headers & Hero */
+.bg-arabesque {
+  background-image: radial-gradient(circle at 50% 50%, rgba(6, 78, 59, 0.03) 0%, transparent 70%);
+}
+
+/* Arabic typography styling */
+.font-quran-text {
+  font-family: 'Amiri Quran', 'Amiri', 'Scheherazade New', serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 2.3;
+  word-spacing: 2px;
+}
+
+.font-arabic-title {
+  font-family: 'Amiri', 'Scheherazade New', serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1ee;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1c1917;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #44403c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}
